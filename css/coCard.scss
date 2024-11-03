@@ -95,27 +95,6 @@ a:hover{
 	}
 }	
 
-// header {
-// 	position: relative;
-// 	height: 4em;
-// 	width: 100%;
-// 	box-sizing: border-box;
-// 	text-align: left;
-// 	z-index: 9999;
-// 	padding: 0.8em 1em 0 1em;
-// 	a{
-// 		display: inline-block;
-// 		height: 2em;
-// 		img {
-// 		height: 100%;
-// 		width: auto;
-// 		}
-// 	}
-// 	@media (max-width: 768px) {
-// 		background:  $white_color;
-// 	}
-// }
-
 .kv {
     display: flex;
     justify-content: space-between;
@@ -218,8 +197,7 @@ a:hover{
 			}
 		}
     }
-
-	@media (max-width: 1200px) {
+	@media (max-width: 1280px) {
 		&_pic .card {
 			width: 100%;
 			left: -10%;
@@ -238,6 +216,14 @@ a:hover{
 				width: 90%;
 			}
 		} 
+	}
+}
+@media (max-width: 1280px){
+	.kv {
+		padding: 150px 0;
+		&_info header{
+			top: -150px;
+		}
 	}
 }
 @media (max-width: 1024px){
@@ -649,6 +635,11 @@ a:hover{
 	a:hover{
 		color: #555;
 	}
+	@media (max-width: 1280px) {
+		&_content {
+			width: 90%;
+		}
+	}
 	@media (max-width: 1024px) {
 		&_content {
 			width: 95%;
@@ -768,6 +759,11 @@ a:hover{
     details[open] .content {
         display: block;
     }
+	@media (max-width: 1280px) {
+		details {
+			width: 90%;
+		}
+	}
 	@media (max-width: 1024px) {
 		details {
 			width: 100%;

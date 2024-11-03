@@ -221,7 +221,7 @@ a:hover.cta_button {
             transform: translateY(0);
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .kv_pic .card {
     width: 100%;
     left: -10%;
@@ -248,6 +248,14 @@ a:hover.cta_button {
   }
 }
 
+@media (max-width: 1280px) {
+  .kv {
+    padding: 150px 0;
+  }
+  .kv_info header {
+    top: -150px;
+  }
+}
 @media (max-width: 1024px) {
   .kv {
     padding: 100px 0;
@@ -712,6 +720,11 @@ a:hover.cta_button {
 .discount a:hover {
   color: #555;
 }
+@media (max-width: 1280px) {
+  .discount_content {
+    width: 90%;
+  }
+}
 @media (max-width: 1024px) {
   .discount_content {
     width: 95%;
@@ -837,6 +850,11 @@ a:hover.cta_button {
 }
 .method details[open] .content {
   display: block;
+}
+@media (max-width: 1280px) {
+  .method details {
+    width: 90%;
+  }
 }
 @media (max-width: 1024px) {
   .method details {
