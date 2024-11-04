@@ -238,6 +238,7 @@ a:hover{
 
 .intro {
 	position: relative;
+	padding-top: 6.25rem;
 	.tit {
 		text-align: center;
 		margin-bottom: 40px;
@@ -362,39 +363,6 @@ a:hover{
 			background: linear-gradient(transparent 60%, $secondary_color 40%);
 			padding: 0 10px;
 		}
-		.doctor{
-			background-color: $primary_color;	
-			padding:  50px 20% 50px 80%;
-			margin-top: 150px;
-			border-radius: 20px;
-			display: flex;
-			position: relative;
-			.pic{
-				position: absolute;
-				bottom: -2px;
-				left: 20px;
-			}
-			.text{
-				width: 450px;
-				h3{
-					display: flex;
-					justify-content: space-between;
-					border-bottom: 1px solid $white_color;
-					p{
-						font-size: 1.5rem;
-						color: $white_color;
-					}
-					.clinic{
-						font-size: 1rem;
-					}
-				}
-				p{
-					color: $primary_light_color;
-					font-size: 1rem;
-					text-align-last: left;
-				}
-			}
-		}
 	}
 	@media (max-width: 1024px) {
 		.card01_info h2 .platform img{
@@ -455,8 +423,59 @@ a:hover{
 	}
 }
 
+.doctorintro{
+	background-color: $primary_color;	
+	padding-top: 3rem;
+	.doctor{
+		width: 1280px;
+		display: flex;
+		margin: auto;
+		align-items: center;
+		.pic{
+			// position: absolute;
+			// bottom: -2px;
+			// left: 20px;
+			// flex:1;
+			width: 30%;
+			img{
+				width: 100%;
+				margin-top: -100px;
+			}
+		}
+		.text{
+			// position: absolute;
+			// left: 50%;
+			// bottom: 0;
+			// flex:1;
+			width: 70%;
+			padding: 0 50px;
+			h3{
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid $white_color;
+				padding-bottom: 5px;
+				p{
+					font-size: 1.5rem;
+					color: $white_color;
+				}
+				.clinic{
+					font-size: 1rem;
+				}
+			}
+			p{
+				color: $primary_light_color;
+				font-size: 1rem;
+				text-align-last: left;
+				padding-top: 20px;
+				line-height: 1.6;
+			}
+		}
+	}
+}
+
 .intro03{
 	background: linear-gradient(160deg, $white_color 44%, $gray_light_color 44%);
+	padding-top: 6.25rem;
 	&_content{
 		display: flex;
 		justify-content: space-between;
@@ -565,12 +584,12 @@ a:hover{
 		gap: 15px;
 	}
 	&_list {
-		// flex: 1;
 		text-align: center;
 		background-color: white;
 		border-radius: 20px;
 		padding: 20px 0;
 		width: 25%;
+		position: relative;
 		h3 {
 			font-size: 1.125rem;
 			margin-bottom: 10px;
@@ -601,6 +620,25 @@ a:hover{
 			line-height: 1.6;
 			margin: 0;
 			color: $block_color;
+		}
+		.btn{
+			position: relative;
+			right: calc(-50% + 40px);
+			bottom: -10px;
+			width: 40px;
+			padding: 0;
+			animation: btn 2s infinite ease-in-out;
+		}
+		@keyframes btn {
+			0% {
+			transform: translateX(0);
+			}
+			50% {
+			transform: translateX(-10px);
+			}
+			100% {
+			transform: translateX(0);
+			}
 		}
 	}
 	&_list::before {
