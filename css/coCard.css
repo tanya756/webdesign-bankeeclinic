@@ -572,6 +572,11 @@ a:hover.cta_button {
   width: 70%;
   padding: 0 50px;
 }
+.doctorintro .doctor .text h1 {
+  color: #fff;
+  line-height: 1.2;
+  font-size: 2.5rem;
+}
 .doctorintro .doctor .text h3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,6 +624,9 @@ a:hover.cta_button {
   }
   .doctorintro .doctor .text p, .doctorintro .doctor .text h3 .clinic {
     font-size: 1.25rem;
+  }
+  .doctorintro .doctor .text h1 {
+    margin-top: 20px;
   }
 }
 
