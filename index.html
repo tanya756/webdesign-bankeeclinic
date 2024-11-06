@@ -244,7 +244,8 @@
                                 專人服務 快速通關<br>
                                 所有醫事人員皆適用
                             </p>
-                            <img src="images/btn.png" alt="" class="btn">
+                            
+                            <img src="images/btn.png" alt="" class="trigger-btn" data-popup="popup1">
                         </div>
                         <div class="discount_list aos-init" data-aos="fade-up" data-number="4">
                             <h3>
@@ -259,7 +260,7 @@
                                 專人服務 快速通關<br>
                                 所有醫事人員皆適用
                             </p>
-                            <img src="images/btn.png" alt="" class="btn">
+                            <img src="images/btn.png" alt="" class="trigger-btn" data-popup="popup2">
                         </div>
                     </div>
                </section>
@@ -304,6 +305,63 @@
                         <img src="images/shareline.png" alt="shareline">
                     </a>
                 </div>
+
+                <!-- 遮罩層 -->
+                <div class="popup-overlay"></div>
+
+                <!-- 第一個彈窗 -->
+                <div class="popup" id="popup1">
+                    <span class="close-btn">&times;</span>
+                    <div class="popup-title">醫療金融整合信貸</div>
+                    
+                    <div class="info-cards">
+                    <div class="info-card">
+                        <div class="card-label">最高貸款期限</div>
+                        <div class="card-value">7<span class="card-unit">年</span></div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="card-label">貸款利率最低</div>
+                        <div class="card-value">2.23<span class="card-unit">%起</span></div>
+                        <div class="card-note">（一段式利率）</div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="card-label">最高貸款金額</div>
+                        <div class="card-value">700<span class="card-unit">萬</span></div>
+                        <div class="card-note">（新台幣）</div>
+                    </div>
+                    </div>
+                    
+                    <div class="notes">
+                    <div class="note-item">開辦費：888元</div>
+                    <div class="note-item">不代償，僅線上對保</div>
+                    </div>
+                    
+                    <div class="requirements">
+                    <div class="requirements-title">申辦資格</div>
+                    <div class="requirement-item">年收入≧35萬，18~加計本筆貸款年限不逾65歲內。</div>
+                    <div class="requirement-item">現職滿半年或現職加計前職滿一年(現職與前職中斷期間不逾3個月)。</div>
+                    </div>
+                    
+                    <a href="#" class="learn-more">了解更多</a>
+                </div>
+
+                <!-- 第二個彈窗 -->
+                <div class="popup" id="popup2">
+                    <span class="close-btn">&times;</span>
+                    <div class="popup-title">高利優惠存款帳戶</div>
+                    
+                    <div class="requirements">
+                    <div class="requirements-title">申辦BOSS企業卡，並透過以下網址線上開戶，全院所皆享以下專屬優惠</div>
+                    <div class="requirement-item">Bankee社群活存優惠NT五萬元、六個月。</div>
+                    <div class="requirement-item">一般活存款平時也有1.435%無上限優惠、無任務門檻。</div>
+                    <div class="requirement-item">外幣高利存款線上優存無額度上限。</div>
+                    <div class="requirement-item">每月6次跨提+6次跨轉免手續費。</div>
+                    </div>
+                    
+                    <a href="#" class="learn-more">線上開戶</a>
+                </div>
                
             </article>
         </div>
@@ -329,6 +387,9 @@
             });
         </script>
 
+        <!-- pop -->
+        <script src="js/pop.js"></script>
+
         <!-- documen+summary -->
         <script>
             document.addEventListener('DOMContentLoaded', function() {
@@ -349,8 +410,6 @@
                 });
             });
         </script>
-
-    
 
 
 </body></html>  
