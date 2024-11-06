@@ -20,7 +20,6 @@ body {
   font-family: "Noto Sans TC", sans-serif;
   background-color: #fff;
   font-size: 1rem; /* 使用相對單位 */
-  overflow-x: hidden;
 }
 
 .frame {
@@ -532,10 +531,10 @@ a:hover.cta_button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    overflow: hidden;
   }
   .intro02_pic {
     width: 130%;
-    overflow: hidden;
   }
   .intro02_pic img {
     width: 100%;
@@ -545,13 +544,6 @@ a:hover.cta_button {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-  .intro02 .example {
-    padding-top: 0;
-  }
-  .intro02 .example .checkbox-container {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -617,12 +609,16 @@ a:hover.cta_button {
 @media (max-width: 768px) {
   .doctorintro {
     margin-top: 5rem;
+    padding-bottom: 3rem;
   }
   .doctorintro .doctor {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .doctorintro .doctor .text p, .doctorintro .doctor .text h3 .clinic {
+    font-size: 1.25rem;
   }
 }
 
@@ -693,9 +689,6 @@ a:hover.cta_button {
   .intro03 .card01_info .card {
     padding: 25px 50px;
   }
-  .intro03 .example {
-    padding-top: 0;
-  }
 }
 @media (max-width: 768px) {
   .intro03 {
@@ -714,40 +707,11 @@ a:hover.cta_button {
             flex-direction: column;
   }
   .intro03_pic img {
-    max-width: 80%;
-    margin-top: 50px;
-  }
-  .intro03_pic .w100 {
     max-width: 100%;
-    margin-top: 0;
+    margin-top: 50px;
   }
   .intro03_info h2 {
     gap: 10px;
-  }
-  .intro03_info h2 .bosscard {
-    font-size: 1.75rem;
-  }
-  .intro03_info h2 .platform .note02 {
-    font-size: 1.25rem;
-  }
-  .intro03_info ul {
-    margin: 2rem auto;
-  }
-  .intro03 .example {
-    padding-top: 0;
-  }
-  .intro03 .example .checkbox-container {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 550px) {
-  .intro03_pic {
-    overflow-x: hidden;
-  }
-  .intro03_pic .w100 {
-    max-width: 140%;
-    margin-left: -20%;
   }
 }
 
@@ -905,6 +869,10 @@ a:hover.cta_button {
 @media (max-width: 768px) {
   .discount {
     padding: 3rem 0;
+  }
+  .discount .tit {
+    width: 90%;
+    margin: auto;
   }
   .discount .wrap {
     margin: 3rem auto 0 auto;

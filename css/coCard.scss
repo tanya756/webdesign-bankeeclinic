@@ -32,7 +32,7 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     background-color: $white-color;
 	font-size: 1rem; /* 使用相對單位 */
-	overflow-x: hidden;
+	// overflow: hidden;
 }
 
 .frame{
@@ -108,7 +108,6 @@ a:hover{
 	}
 	.mobile_show{
 		display: block;
-
 		position: relative;
 		background: $white-color;
 		height: 4em;
@@ -126,8 +125,6 @@ a:hover{
 			width: auto;
 			}
 		}
-
-
 	}
 }
 
@@ -474,11 +471,11 @@ a:hover{
 	}
 	@media (max-width: 768px) {
 		&_content {
-			flex-direction: column;		
+			flex-direction: column;	
+			overflow: hidden;
 		}
 		&_pic {
 			width: 130%;
-			overflow: hidden;
 			img {
 				width: 100%;
 			}
@@ -486,12 +483,6 @@ a:hover{
 		&_info{
 			flex-direction: column-reverse;
 		}
-		.example{
-			padding-top: 0;
-		}
-		.example .checkbox-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
 	}
 }
 
@@ -546,8 +537,12 @@ a:hover{
 	}
 	@media (max-width: 768px){
 		margin-top: 5rem;
+		padding-bottom: 3rem;
 		.doctor{
 			flex-direction: column;
+			.text p ,.text h3 .clinic{
+				font-size: 1.25rem;
+			}
 		}
 	}
 }
@@ -597,9 +592,6 @@ a:hover{
 		.card01_info .card {
 			padding: 25px 50px;
 		}
-		.example{
-			padding-top: 0;
-		}
 	}
 	@media (max-width: 768px) {
 		padding-top: 3rem;
@@ -611,43 +603,13 @@ a:hover{
 		}
 		&_pic {
 			img {
-				max-width: 80%;
-				margin-top: 50px;
-			}
-			.w100{
 				max-width: 100%;
-				margin-top: 0;
+				margin-top: 50px;
 			}
 		}
 		&_info {
 			h2{
 				gap: 10px;
-				.bosscard{
-					font-size: 1.75rem;
-				}
-				.platform{
-					.note02{
-						font-size: 1.25rem;
-					}
-				}
-			}
-			ul{
-				margin: 2rem auto;
-			}
-		}
-		.example{
-			padding-top: 0;
-		}
-		.example .checkbox-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-	}
-	@media (max-width: 550px) {
-		&_pic{
-			overflow-x: hidden;
-			.w100{
-				max-width: 140%;
-				margin-left: -20%;
 			}
 		}
 	}
@@ -778,6 +740,10 @@ a:hover{
 		}
 	}
 	@media (max-width: 768px) {
+		.tit{
+			width: 90%;
+			margin: auto;
+		}
 		padding: 3rem 0;
 		.wrap{
 			margin: 3rem auto 0 auto;
