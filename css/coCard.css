@@ -17,7 +17,7 @@ html {
   }
 }
 body {
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", "Heiti TC", "Nunito Sans", sans-serif;
   background-color: #fff;
   font-size: 1rem; /* 使用相對單位 */
 }
@@ -191,6 +191,7 @@ a:hover.cta_button {
 .kv_info h1 {
   font-size: 3.75rem;
   font-weight: bolder;
+  font-weight: 900;
   margin: 1rem 0 3rem 0;
 }
 .kv_info .describe {
@@ -879,8 +880,16 @@ a:hover.cta_button {
     padding: 3rem 0;
   }
   .discount .tit {
-    width: 90%;
+    width: 100%;
     margin: auto;
+  }
+  .discount .tit .tit_maintitle {
+    font-size: 2.25rem;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    text-align: center;
   }
   .discount .wrap {
     margin: 3rem auto 0 auto;

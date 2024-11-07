@@ -29,10 +29,15 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans TC', sans-serif;
+	font-family: 
+        "Noto Sans TC",
+        "Microsoft JhengHei",
+        "PingFang TC",
+        "Heiti TC",
+        "Nunito Sans",
+        sans-serif;
     background-color: $white-color;
 	font-size: 1rem; /* 使用相對單位 */
-	// overflow: hidden;
 }
 
 .frame{
@@ -180,6 +185,7 @@ a:hover{
         h1 {
             font-size: 3.75rem;
             font-weight: bolder;
+			font-weight: 900;
             margin: 1rem 0 3rem 0;
         }
 		.describe{
@@ -749,8 +755,16 @@ a:hover{
 	}
 	@media (max-width: 768px) {
 		.tit{
-			width: 90%;
+			width: 100%;
 			margin: auto;
+			.tit_maintitle{
+				font-size: 2.25rem;
+
+				background: none;
+				box-shadow: none;
+				padding: 0;
+				text-align: center;
+			}
 		}
 		padding: 3rem 0;
 		.wrap{
