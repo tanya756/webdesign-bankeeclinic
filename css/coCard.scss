@@ -31,14 +31,31 @@ html {
 body {
 	font-family: 
         "Noto Sans TC",
-        "Microsoft JhengHei",
-        "PingFang TC",
-        "Heiti TC",
+        -apple-system,          /* Apple 系統字體優先 */
+        BlinkMacSystemFont,     /* macOS Chrome */
+        "PingFang TC",         /* macOS/iOS 優先字體 */
+        "Microsoft JhengHei",  /* Windows 備援 */
+        "Heiti TC",           /* 舊版 Mac 備援 */
         "Nunito Sans",
         sans-serif;
     background-color: $white-color;
 	font-size: 1rem; /* 使用相對單位 */
+	-webkit-text-size-adjust: 100%; /* 防止 Safari 自動調整字體大小 */
+
+	/* Safari 特別處理 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;      /* 防止瀏覽器合成粗體 */
 }
+
+
+/* 標題文字設定 */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    -webkit-text-stroke: 0.4px; /* 加粗效果 */
+    letter-spacing: -0.02em;    /* 字距微調 */
+}
+
 
 .frame{
 	padding: 6.25rem 0;
@@ -133,6 +150,25 @@ a:hover{
 	}
 }
 
+/* Safari 特別處理 */
+@supports (-webkit-touch-callout: none) {
+    body {
+        /* iOS Safari 專用 */
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    h1 {
+        /* 強化標題顯示 */
+        font-weight: 900 !important;
+        -webkit-text-stroke: 0.7px;
+        font-synthesis: weight;
+    }
+}
+
+
+
+
 .kv {
     display: flex;
     justify-content: space-between;
@@ -187,6 +223,10 @@ a:hover{
             font-weight: bolder;
 			font-weight: 900;
             margin: 1rem 0 3rem 0;
+
+			/* Safari 特別加強粗體效果 */
+			-webkit-text-stroke: 0.6px;
+			font-weight: 900 !important;
         }
 		.describe{
 			position: relative;
