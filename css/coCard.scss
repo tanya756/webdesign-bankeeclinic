@@ -220,13 +220,12 @@ a:hover{
 		}
         h1 {
             font-size: 3.75rem;
-            font-weight: bolder;
-			font-weight: 900;
+            font-weight: bold;
             margin: 1rem 0 3rem 0;
 
 			/* Safari 特別加強粗體效果 */
 			-webkit-text-stroke: 0.6px;
-			font-weight: 900 !important;
+			font-weight: bold !important;
         }
 		.describe{
 			position: relative;
