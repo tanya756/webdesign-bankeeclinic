@@ -534,6 +534,7 @@ a:hover{
 .doctorintro{
 	background-color: $primary_color;	
 	padding-top: 3rem;
+	display: none;
 	.doctor{
 		width: 1280px;
 		display: flex;
