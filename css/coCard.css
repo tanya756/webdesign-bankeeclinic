@@ -578,8 +578,7 @@ a:hover.cta_button {
 
 .doctorintro {
   background-color: #4aa0f8;
-  padding-top: 3rem;
-  display: none;
+  padding: 3rem 0;
 }
 .doctorintro .doctor {
   width: 1280px;
