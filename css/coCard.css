@@ -882,9 +882,6 @@ a:hover.cta_button {
   margin-left: 5px;
   font-size: 12px;
 }
-.discount a:hover {
-  color: #555;
-}
 @media (max-width: 1280px) {
   .discount_content {
     width: 90%;
@@ -1047,6 +1044,22 @@ a:hover.cta_button {
   }
 }
 
+.apply {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  z-index: 9999;
+}
+
+.apply a:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .apply {
+    right: 5px;
+  }
+}
 .share {
   position: fixed;
   right: 20px;

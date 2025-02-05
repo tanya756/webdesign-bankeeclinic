@@ -771,9 +771,9 @@ a:hover{
             font-size: 12px;
         }
 	}
-	a:hover{
-		color: #555;
-	}
+	// a:hover{
+	// 	color: #555;
+	// }
 	@media (max-width: 1280px) {
 		&_content {
 			width: 90%;
@@ -930,6 +930,21 @@ a:hover{
             }
         }
     }
+}
+
+.apply {
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+	z-index: 9999;
+}
+.apply a:hover {
+	opacity: 0.6;
+}
+@media (max-width: 768px) {
+	.apply {
+		right: 5px;
+	}
 }
 
 .share{
